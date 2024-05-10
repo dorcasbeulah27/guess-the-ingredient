@@ -1,0 +1,17 @@
+import time
+
+ingredient_list=["choco powder","egg","milk","sugar"]
+points= 0
+print("hey guess 3 ingredients  from the cookie recipe READY")
+time.sleep(1)
+for i in range(3):
+    ingredient=input("GUESS THE"+ " " + str(i+1) +" " + " INGREDIENT?")
+    if(ingredient in ingredient_list):
+        print("GREAT!! guessed successfully")
+        points= points + 1
+    else:
+        print("UH NO :( wrong guess")
+        time.sleep(1)
+
+print("GAME OVER!! YOU GOT " + str(points)+ " points")
+print(ingredient_list)
